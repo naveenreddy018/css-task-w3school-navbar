@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(62, 58, 63);
+        color: white;
+      
+       }
+        .container > .item{
+            padding:5px;
+            text-transform: uppercase;    
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container > .item:hover{
+            background-color: green;
+    
+        }
+        .container2{
+            display: flex;
+            justify-content:flex-start;
+            position: relative;
+            left: 50px;
+           gap:60px;
+           padding: 10px;
+        }
+        .container2 > .item1::after{
+            content: '  ⯆';
+            height: 200px;
+        }
+        .container2 > .item2::after{
+            content: '  ⯆';
+        }
+
+        .container2 > .item3::after{
+            content: '  ⯆';
+        }
+
+        .container2 > .item4::after{
+            content: '  ⯆';
+        }
+       .input{
+        border-radius: 50px;
+        justify-content: center;
+        padding: 5px;
+       }
+       .container2 > .input::after{
+
+       }
+       .main{
+        display: flex;
+        gap:100px;
+      font-family: Arial, Helvetica, sans-serif;
+    margin-left: 150px;}
+        
+        
+      
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <img style="position: relative; bottom: 10px;" src="./Screenshot 2024-08-01 165108.png" width="50">
+        <div class="item item1">Tutorials</div>
+        <div class="item item2">exercises</div>
+        <div class="item item3">certificates</div>
+        <div class="item item4">services</div>
+        <div class="search">
+            <img style="position: relative; left:170px; top:3px;" src="./search.svg" width="15" >
+            <input class="input"  type="text" placeholder="search">
+        </div>
+        <div class="main">
+            <div>plus</div>
+            <div>spaces</div>
+            <div>get certified</div>
+        </div>
+
+    </div>
+   
+    <div class="container">
+        <div class="item">html</div>
+        <div class="item">css</div>
+        <div class="item">javascript</div>
+        <div class="item">sql</div>
+        <div class="item">python</div>
+        <div class="item">java</div>
+        <div class="item">php</div>
+        <div class="item">how&nbsp;to</div>
+        <div class="item">w3.css</div>
+        <div class="item">c</div>
+        <div class="item">c++</div>
+        <div class="item">c#</div>
+        <div class="item">boot&nbsp;strap</div>
+        <div class="item">react</div>
+        <div class="item">my sql</div>
+        <div class="item">jquery</div>
+        <div class="item">excel</div>
+        <div class="item">xml</div>
+        <div class="item">django</div>
+        <div class="item">numpy</div>
+    </div>
+</body>
+</html>
